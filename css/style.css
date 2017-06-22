@@ -13,6 +13,12 @@ body {
 
 }
 
+li {
+
+  list-style: none;
+
+}
+
 a {
 
     text-decoration: none;
@@ -140,6 +146,12 @@ a {
 .footer-contact {
 
   font-size: 22px;
+
+}
+
+.nav-footer {
+
+  display: none;
 
 }
 
@@ -322,6 +334,36 @@ a {
 
   }
 
+  .footer-back {
+
+    display: none;
+
+  }
+
+  .nav-footer {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    justify-content: flex-end;
+
+  }
+
+  .nav-footer li {
+
+    margin-left: 30px;
+    font-weight: bold;
+
+  }
+
+  .nav-footer li a:visited,
+  .nav-footer li a:before
+   {
+
+    color: #000;
+    font-weight: bold;
+
+  }
 
 
 }
