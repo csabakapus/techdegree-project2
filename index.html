@@ -10,86 +10,105 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- start of .wrap -->
   <div class="wrap">
-  <header>
+
+    <!-- start of .nav-header -->
     <nav class="nav-header">
       <h1 class="name">Csaba Kapus</h1>
-      <ul>
+      <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <img class="profile-image" src="images/responsive-layout-profile.png" alt="Profile Picture">
-      <p class="description">
-        Hi! I'm a front-end developer who loves responsive design and css.
-        I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
-      </p>
-    </nav> <!-- end of nav -->
-  </header>
-
-  <div class="container">
-    <h1 id="portfolio" class="section-title">PORTFOLIO</h1>
-    <img class="images" src="images/portfolio-1.png" alt="Marketing Page">
-    <h1 class="project-name">Marketing Page</h1>
-    <p class="description">
-      This project shows the front page of a marketing website meant for a specific business
-      I'm intrested in.
-    </p>
-
-    <img class="images" src="images/portfolio-2.png" alt="Search Page">
-    <h1 class="project-name">Search Page</h1>
-    <p class="description">
-      This project seaches through a specific database to find information that the user
-      is trying to look up.
-    </p>
-
-    <img class="images" src="images/portfolio-3.png" alt="Travel App">
-    <h1 class="project-name">Travel App</h1>
-    <p class="description">
-      This project compares travel times based on different transportation methods and tells you
-      the best one.
-    </p>
-
-    <img class="images" src="images/portfolio-4.png" alt="Map of Favorite Spots">
-    <h1 class="project-name">Map of Favorite Spots</h1>
-    <p class="description">
-      This project uses mapping apis to plot points from my favorite spots
-      in the city for a do-it-yourself walkin tour.
-    </p>
-
-    <img class="images" src="images/portfolio-5.png" alt="Photo Gallery">
-    <h1 class="project-name">Photo Gallery</h1>
-    <p class="description">
-      This project shows pictures from a recent trip to the viewer and
-      allows them to easely navigate through photos.
-    </p>
-
-    <img class="images" src="images/portfolio-6.png" alt="Calculator">
-    <h1 class="project-name">Calculator</h1>
-    <p class="description">
-      Someone can enter the numbers they want, and press the
-      big blue button and get result.
-    </p>
-
-  </div> <!-- end of .container -->
-  <footer class="footer">
-    <h1 id="contact" class="footer-contact">Contact</h1>
-    <p class="description">
-      If you're intrested in chatting or want more information about what I've
-      been working on, I'd love to hear from you!
-    </p>
-
-    <p class="contact-info">Phone<span>  <a href="tel:+1(111)555-1234">+1(111)555-1234</a> </span></p>
-    <p class="contact-info">Email<span>  <a href="mailto:email@yoursite.com">email@yoursite.com</a> </span></p>
-
-    <div class="end-infos">
-      <h1 class="footer-name">Csaba Kapus</h1>
-      <h1 id="#home" class="footer-back"><a href=""> BACK TO TOP </a></h1>
+      <div class="profile-container">
+        <img class="profile-image" src="images/responsive-layout-profile.png" alt="Profile Picture"/>
+        <p class="profile-description">
+          Hi! I'm a front-end developer who loves responsive design and css.
+          I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!
+        </p>
     </div>
-  </footer> <!-- end of .footer -->
+    </nav>
+    <!-- end of .nav-header -->
 
+    <!-- start of .container -->
+    <div class="container">
+      <h1 id="portfolio" class="section-title">PORTFOLIO</h1>
+      <section class="left section clearfix">
+        <img class="images" src="images/portfolio-1.png" alt="Marketing Page">
+        <h1 class="project-name">Marketing Page</h1>
+        <p class="description">
+          This project shows the front page of a marketing website meant for a specific business
+          I'm intrested in.
+        </p>
+      </section>
 
+      <section class="right section">
+        <img class="images" src="images/portfolio-2.png" alt="Search Page">
+        <h1 class="project-name">Search Page</h1>
+        <p class="description">
+          This project seaches through a specific database to find information that the user
+          is trying to look up.
+        </p>
+      </section>
 
-  </div> <!-- end of .wrap -->
+      <section class="left section clearfix">
+        <img class="images" src="images/portfolio-3.png" alt="Travel App">
+        <h1 class="project-name">Travel App</h1>
+        <p class="description">
+          This project compares travel times based on different transportation methods and tells you
+          the best one.
+        </p>
+      </section>
+
+      <section class="right section">
+        <img class="images" src="images/portfolio-4.png" alt="Map of Favorite Spots">
+        <h1 class="project-name">Map of Favorite Spots</h1>
+        <p class="description">
+          This project uses mapping apis to plot points from my favorite spots
+          in the city for a do-it-yourself walkin tour.
+        </p>
+      </section>
+
+      <section class="left section clearfix">
+        <img class="images" src="images/portfolio-5.png" alt="Photo Gallery">
+        <h1 class="project-name">Photo Gallery</h1>
+        <p class="description">
+          This project shows pictures from a recent trip to the viewer and
+          allows them to easely navigate through photos.
+        </p>
+      </section>
+
+      <section class="right section">
+        <img class="images" src="images/portfolio-6.png" alt="Calculator">
+        <h1 class="project-name">Calculator</h1>
+        <p class="description">
+          Someone can enter the numbers they want, and press the
+          big blue button and get result.
+        </p>
+      </section>
+    </div>
+    <!-- end of .container -->
+
+    <!-- start of .footer -->
+    <footer class="footer clearfix">
+      <h1 id="contact" class="footer-contact">Contact</h1>
+      <p class="description">
+        If you're intrested in chatting or want more information about what I've
+        been working on, I'd love to hear from you!
+      </p>
+
+      <p class="contact-info">Phone<span>  <a href="tel:+1(111)555-1234">+1(111)555-1234</a> </span></p>
+      <p class="contact-info">Email<span>  <a href="mailto:email@yoursite.com">email@yoursite.com</a> </span></p>
+
+      <div class="end-infos">
+        <h1 class="footer-name">Csaba Kapus</h1>
+        <h1 id="#home" class="footer-back"><a href=""> BACK TO TOP </a></h1>
+      </div>
+    </footer>
+    <!-- end of .footer -->
+
+  </div>
+  <!-- end of .wrap -->
 </body>
 </html>

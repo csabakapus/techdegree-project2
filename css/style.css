@@ -9,7 +9,7 @@
 
 body {
 
-  background-color: #F8F8F8;
+  background-color: #FFF;
 
 }
 
@@ -40,13 +40,14 @@ a {
 
   margin: 0 auto;
   text-align: center;
+  background-color: #F8F8F8;
 
 }
 
 .nav-header a {
 
   display: block;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   margin: 10px 15px;
   padding: 15px 5px;
 
@@ -60,6 +61,8 @@ a {
 
 }
 
+
+
 .profile-image {
 
   margin: 40px 0;
@@ -71,6 +74,16 @@ a {
 
   margin: 20px 0;
   max-width: 80%;
+
+}
+
+.profile-description {
+
+  text-align: center;
+  margin: -10px 15px 0;
+  padding: 15px 0 30px;
+  font-size: 16px;
+  color: gray;
 
 }
 
@@ -173,11 +186,142 @@ a {
 
 }
 
-/* Id section */
-
-
-
-
-
 
 /* Media query section */
+
+@media (min-width: 768px) {
+
+  .name {
+
+    padding-top: 30px;
+    margin-bottom: -5px;
+
+  }
+
+  .nav-header {
+
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+
+  }
+
+  .navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+  }
+
+  .navbar li {
+
+    list-style: none;
+
+  }
+
+  .navbar a {
+
+    background-color: #F8F8F8;
+
+  }
+
+  .profile-image {
+
+    max-width: 40%;
+    float: right;
+    margin-bottom: 60px;
+
+  }
+
+  .profile-container p {
+
+    margin-top: 25px;
+    float: left;
+    width: 55%;
+    text-align: left;
+
+  }
+
+  .profile-container {
+
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .section  {
+
+    width: 50%;
+
+  }
+
+  .left {
+
+    float: left;
+
+  }
+
+  .right {
+
+    float: right;
+
+  }
+
+  .section-title {
+
+    margin: 0 auto;
+    padding: 70px 0;
+    text-align: center;
+
+  }
+
+  .images {
+
+    margin-top: 0;
+    max-width: 95%;
+
+  }
+
+  .footer-contact {
+
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px auto;
+
+  }
+
+  .footer {
+
+    min-height: calc(100vh - 200px);
+    background-color: #F8F8F8;
+    width: 100%;
+    padding-bottom: 0;
+
+  }
+
+  .clearfix {
+
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+
+  p.description {
+
+    margin-bottom: 20px;
+
+  }
+
+  .footer > .description {
+
+    margin-top: 10px;
+
+  }
+
+
+
+}
