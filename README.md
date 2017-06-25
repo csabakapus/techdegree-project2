@@ -8,3 +8,5 @@
 
 # Mobil first approach - start 19:25
 initial commit at 19:25
+
+issue with the layout at (viewport) width  833

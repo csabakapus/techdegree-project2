@@ -27,7 +27,8 @@ a {
 }
 
 .name {
-  padding: 5px 0;
+  padding: 30px 0 15px;
+  margin-top: 0;
 }
 
 .nav-header {
@@ -41,15 +42,10 @@ a {
   background-color: #FFF;
   margin: 10px 15px;
   padding: 15px 5px;
-}
-
-.nav-header a {
   color: black;
   font-weight: bold;
   font-size: 1.5em;
 }
-
-
 
 .profile-image {
   margin: 40px 0;
@@ -101,6 +97,7 @@ a {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
+  background-color: yellow;
 }
 
 .footer a {
@@ -149,17 +146,12 @@ a {
 
 
 /* Media query section */
-
 @media (min-width: 768px) {
 
-  .name {
-    padding-top: 30px;
-    margin-bottom: -5px;
-  }
-
   .nav-header {
-    display: flex;
+  /*  display: flex;
     flex-direction: column;
+  */
     height: 50%;
   }
 
@@ -177,22 +169,30 @@ a {
     background-color: #F8F8F8;
   }
 
+  .name {
+    padding-top: 30px;
+    margin-bottom: -5px;
+  }
 
-
+/* parent of .profile-image and .profile-description */
   .profile-container {
-    width: 90%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
+    width: 90%;
+    margin: 0 auto;
+
   }
 
-
+/* child of .profile-container */
   .profile-image {
     margin-bottom: 60px;
+    max-width: 100%;
   }
 
+/* child of .profile-container */
   .profile-description {
     margin-top: 25px;
+    padding-right: 20px;
     text-align: left;
   }
 
@@ -233,7 +233,8 @@ a {
     padding-bottom: 0;
   }
 
-  .clearfix {
+  .clearfix::before,
+  .clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -277,6 +278,10 @@ a {
 
 @media (min-width: 1024px) {
 
+  .nav-header {
+    display: flex;
+    flex-direction: column;
+  }
 
 
 
