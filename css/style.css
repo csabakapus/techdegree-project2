@@ -1,201 +1,150 @@
 * {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Slab', serif;
-
 }
 
 body {
-
   background-color: #FFF;
-
 }
 
 li {
-
   list-style: none;
-
 }
 
 a {
-
     text-decoration: none;
     margin: 0;
-
 }
 
 
 /* Class section */
 
 .wrap {
-
   width: 100%;
   margin: 0 auto;
-
 }
 
 .name {
-
   padding: 5px 0;
-
 }
 
 .nav-header {
-
   margin: 0 auto;
   text-align: center;
   background-color: #F8F8F8;
-
 }
 
 .nav-header a {
-
   display: block;
   background-color: #FFF;
   margin: 10px 15px;
   padding: 15px 5px;
-
 }
 
 .nav-header a {
-
   color: black;
   font-weight: bold;
   font-size: 1.5em;
-
 }
 
 
 
 .profile-image {
-
   margin: 40px 0;
   max-width: 70%;
-
 }
 
 .images {
-
   margin: 20px 0;
   max-width: 80%;
-
 }
 
 .profile-description {
-
   text-align: center;
   margin: -10px 15px 0;
   padding: 15px 0 30px;
   font-size: 16px;
   color: gray;
-
 }
 
 .description {
-
   text-align: center;
   margin: -10px 15px 0;
   padding: 15px 0 30px;
   font-size: 16px;
   color: gray;
-
 }
 
 .container {
-
   background-color: #FFF;
   text-align: center;
   width: 100%;
-
 }
 
 
 .section-title {
-
   padding-top: 60px;
   padding-bottom: 20px;
   font-size: 20px;
-
 }
 
 .project-name {
-
   font-size: 22px;
   margin-top: 5px;
   padding: 5px 0;
-
 }
 
 .footer {
-
   margin: 0 auto;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-
 }
 
 .footer a {
-
   color: gray;
-
 }
 
 .footer-contact {
-
   font-size: 22px;
-
 }
 
 .nav-footer {
-
   display: none;
-
 }
 
 .contact-info {
-
   margin: 20px 0;
-
 }
 
 .contact-info:last-child {
-
   padding-bottom: 70px;
-
 }
 
 .end-infos {
-
  border-top: 1px solid gray;
  width: 90%;
  margin: 0 auto;
  margin-top: 80px;
-
 }
 
 .footer-name {
-
   padding: 15px 0;
   float: left;
   font-size: 16px;
-
 }
 
 .footer-back {
-
   padding: 15px 0;
   float: right;
   font-size: 16px;
   color: black;
-
 }
 
 .footer-back a:visited {
   color: black;
-
 }
 
 
@@ -204,166 +153,134 @@ a {
 @media (min-width: 768px) {
 
   .name {
-
     padding-top: 30px;
     margin-bottom: -5px;
-
   }
 
   .nav-header {
-
     display: flex;
     flex-direction: column;
     height: 50%;
-
   }
 
   .navbar {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
   }
 
   .navbar li {
-
     list-style: none;
-
   }
 
   .navbar a {
-
     background-color: #F8F8F8;
-
   }
 
-  .profile-image {
 
-    max-width: 40%;
-    float: right;
-    margin-bottom: 60px;
-
-  }
-
-  .profile-container p {
-
-    margin-top: 25px;
-    float: left;
-    width: 55%;
-    text-align: left;
-
-  }
 
   .profile-container {
-
     width: 90%;
     margin: 0 auto;
-
+    display: flex;
+    flex-direction: row-reverse;
   }
 
+
+  .profile-image {
+    margin-bottom: 60px;
+  }
+
+  .profile-description {
+    margin-top: 25px;
+    text-align: left;
+  }
+
+
   .section  {
-
     width: 50%;
-
   }
 
   .left {
-
     float: left;
-
   }
 
   .right {
-
     float: right;
-
   }
 
   .section-title {
-
     margin: 0 auto;
     padding: 70px 0;
     text-align: center;
-
   }
 
   .images {
-
     margin-top: 0;
     max-width: 95%;
-
   }
 
   .footer-contact {
-
     display: inline-block;
     padding: 10px 0;
     margin: 10px auto;
-
   }
 
   .footer {
-
     min-height: calc(100vh - 200px);
     background-color: #F8F8F8;
     width: 100%;
     padding-bottom: 0;
-
   }
 
   .clearfix {
-
     content: "";
     display: table;
     clear: both;
-
   }
 
 
   p.description {
-
     margin-bottom: 20px;
-
   }
 
   .footer > .description {
-
     margin-top: 10px;
-
   }
 
   .footer-back {
-
     display: none;
-
   }
 
   .nav-footer {
-
     display: flex;
     flex-direction: row;
     padding-top: 25px;
     justify-content: flex-end;
-
   }
 
   .nav-footer li {
-
     margin-left: 30px;
     font-weight: bold;
-
   }
 
-  .nav-footer li a:visited,
-  .nav-footer li a:before
-   {
 
+  .nav-footer li a:link,
+  .nav-footer li a:visited {
     color: #000;
     font-weight: bold;
-
   }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+
+
+
 
 
 }
