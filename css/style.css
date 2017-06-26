@@ -1,16 +1,17 @@
+/*------------------
+ Base Element Styles
+ -----------------*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Slab', serif;
+  list-style: none;
 }
 
 body {
   background-color: #FFF;
-}
-
-li {
-  list-style: none;
 }
 
 a {
@@ -19,7 +20,9 @@ a {
 }
 
 
-/* Class section */
+/*--------------------------
+Header and Navigation Styles
+--------------------------*/
 
 .wrap {
   width: 100%;
@@ -65,6 +68,16 @@ a {
   color: gray;
 }
 
+/*-------------
+ Content Styles
+ ------------*/
+
+.container {
+  background-color: #FFF;
+  text-align: center;
+  width: 100%;
+}
+
 .description {
   text-align: center;
   margin: -10px 15px 0;
@@ -73,14 +86,7 @@ a {
   color: gray;
 }
 
-.container {
-  background-color: #FFF;
-  text-align: center;
-  width: 100%;
-}
-
-
-.section-title {
+.container_title {
   padding-top: 60px;
   padding-bottom: 20px;
   font-size: 20px;
@@ -92,12 +98,16 @@ a {
   padding: 5px 0;
 }
 
+/*-----------
+Footer styles
+------------*/
+
 .footer {
   margin: 0 auto;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: yellow;
+  background-color: #F8F8F8;
 }
 
 .footer a {
@@ -108,7 +118,7 @@ a {
   font-size: 22px;
 }
 
-.nav-footer {
+.footer_navigation-bar {
   display: none;
 }
 
@@ -145,13 +155,16 @@ a {
 }
 
 
-/* Media query section */
+/*-------------------------
+Media query for tablet view
+-------------------------*/
+
 @media (min-width: 768px) {
 
+/*------------------------------------------
+Header and Navigation styles for tablet view
+------------------------------------------*/
   .nav-header {
-  /*  display: flex;
-    flex-direction: column;
-  */
     height: 50%;
   }
 
@@ -174,7 +187,6 @@ a {
     margin-bottom: -5px;
   }
 
-/* parent of .profile-image and .profile-description */
   .profile-container {
     display: flex;
     flex-direction: row-reverse;
@@ -183,33 +195,37 @@ a {
 
   }
 
-/* child of .profile-container */
   .profile-image {
     margin-bottom: 60px;
     max-width: 100%;
   }
 
-/* child of .profile-container */
   .profile-description {
     margin-top: 25px;
     padding-right: 20px;
     text-align: left;
   }
 
+/*------------------------------
+  Content styles for tablet view
+------------------------------*/
 
   .section  {
     width: 50%;
+    display: inline-block;
+    vertical-align: top;
   }
 
   .left {
     float: left;
   }
 
+/* This right float is not needed anymore, please remove it */
   .right {
     float: right;
   }
 
-  .section-title {
+  .container_title {
     margin: 0 auto;
     padding: 70px 0;
     text-align: center;
@@ -220,11 +236,10 @@ a {
     max-width: 95%;
   }
 
-  .footer-contact {
-    display: inline-block;
-    padding: 10px 0;
-    margin: 10px auto;
-  }
+/*----------------------------
+ Footer styles for tablet view
+ ---------------------------*/
+
 
   .footer {
     min-height: calc(100vh - 200px);
@@ -232,6 +247,45 @@ a {
     width: 100%;
     padding-bottom: 0;
   }
+
+  .footer_contact {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px auto;
+  }
+
+   .footer--description {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .footer-back {
+    display: none;
+  }
+
+  .footer_navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    justify-content: flex-end;
+  }
+
+  .footer_navigation-bar li {
+    margin-left: 30px;
+    font-weight: bold;
+  }
+
+
+  .footer_navigation-bar li a:link,
+  .footer_navigation-bar li a:visited {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+/*-----------------------------------------
+Clearfix for collapsing margins tablet view
+-----------------------------------------*/
 
   .clearfix::before,
   .clearfix::after {
@@ -241,46 +295,16 @@ a {
   }
 
 
-  p.description {
-    margin-bottom: 20px;
-  }
-
-  .footer > .description {
-    margin-top: 10px;
-  }
-
-  .footer-back {
-    display: none;
-  }
-
-  .nav-footer {
-    display: flex;
-    flex-direction: row;
-    padding-top: 25px;
-    justify-content: flex-end;
-  }
-
-  .nav-footer li {
-    margin-left: 30px;
-    font-weight: bold;
-  }
-
-
-  .nav-footer li a:link,
-  .nav-footer li a:visited {
-    color: #000;
-    font-weight: bold;
-  }
-
-
 }
 
+/*-----------------
+Desktop view styles
+-----------------*/
 
 @media (min-width: 1024px) {
 
   .nav-header {
-    display: flex;
-    flex-direction: column;
+
   }
 
 
