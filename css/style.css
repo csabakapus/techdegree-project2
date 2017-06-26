@@ -192,7 +192,6 @@ Header and Navigation styles for tablet view
     flex-direction: row-reverse;
     width: 90%;
     margin: 0 auto;
-
   }
 
   .profile-image {
@@ -210,19 +209,15 @@ Header and Navigation styles for tablet view
   Content styles for tablet view
 ------------------------------*/
 
-  .section  {
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
-  }
 
-  .left {
-    float: left;
-  }
 
-/* This right float is not needed anymore, please remove it */
-  .right {
-    float: right;
+/*--------------
+Container styles
+--------------*/
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .container_title {
@@ -236,10 +231,29 @@ Header and Navigation styles for tablet view
     max-width: 95%;
   }
 
+ .description {
+   margin: 0;
+   padding: 40px 0;
+   height: 130px;
+ }
+
+
+ /*--------------------
+ 2 column layout styles
+ --------------------*/
+
+   .container_card {
+     width: 45%;
+     margin-left: 2.5%;
+     margin-right: 2.5%;
+     display: inline-block;
+     float: left;
+     position: relative;
+   }
+
 /*----------------------------
  Footer styles for tablet view
  ---------------------------*/
-
 
   .footer {
     min-height: calc(100vh - 200px);

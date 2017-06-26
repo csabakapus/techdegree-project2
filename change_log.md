@@ -6,3 +6,6 @@ Missing logs ...
 *2017.06.25 evening.* Issue with the layout at (viewport) width  833  
 *2017.06.26 - 20:35* Refactoring the code start as it is too much code and layout issue occured at phone and tablet view.
 *2016.06.26 - 20:52* Using BEM ( block, element, modifier ) for a better documented HTML and CSS.
+
+
+add container_card to css and copy the things from .section and .left .right to .container_card 
