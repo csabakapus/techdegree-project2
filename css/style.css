@@ -228,12 +228,13 @@ Container styles
 
   .images {
     margin-top: 0;
-    max-width: 95%;
+    max-width: 100%;
   }
 
  .description {
-   margin: 0;
-   padding: 40px 0;
+   margin: 0 auto;
+   padding: 10px 0 40px;
+   width: 80%;
    height: 130px;
  }
 
