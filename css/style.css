@@ -42,13 +42,18 @@ Header and Navigation Styles
 
 .nav-header a {
   display: block;
-  background-color: #FFF;
+  background-color: #69C673;
+  color: white;
   margin: 10px 15px;
   padding: 15px 5px;
-  color: black;
   font-weight: bold;
   font-size: 1.5em;
 }
+
+.navbar li a {
+  border-radius: 3px;
+}
+
 
 .profile-image {
   margin: 40px 0;
@@ -146,6 +151,10 @@ Footer styles
   color: black;
 }
 
+.footer a:hover {
+  color: #69C673;
+}
+
 
 /*-------------------------
 Media query for tablet view
@@ -170,8 +179,13 @@ Header and Navigation styles for tablet view
     list-style: none;
   }
 
+  .navbar li a:hover {
+    color: #69C673;
+  }
+
   .navbar a {
     background-color: #F8F8F8;
+    color: black;
   }
 
   .name {
@@ -282,12 +296,6 @@ Container styles
   }
 
 
-  .footer_navigation-bar li a:link,
-  .footer_navigation-bar li a:visited {
-    color: #000;
-    font-weight: bold;
-  }
-
 
 /*-----------------------------------------
 Clearfix for collapsing margins tablet view
@@ -330,10 +338,16 @@ Desktop view styles
     width: 90%;
     margin: 0 auto;
     padding: 30px 0 20px;
+    height: 120px;
   }
 
   .profile-description {
     margin-left: 0;
+  }
+
+  .nav-header li {
+    padding-left: 15px;
+
   }
 
   .nav-header li a:last-child {
@@ -373,6 +387,7 @@ Desktop view styles
   .footer_contact {
     padding-bottom: 25px;
   }
+
 
 
 }
