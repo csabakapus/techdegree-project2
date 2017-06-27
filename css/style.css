@@ -1,182 +1,378 @@
-* {
+/*------------------
+ Base Element Styles
+ -----------------*/
 
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Slab', serif;
-
+  list-style: none;
 }
 
 body {
-
-  background-color: #F8F8F8;
-
+  background-color: #FFF;
 }
 
 a {
-
     text-decoration: none;
     margin: 0;
-
 }
 
 
-/* Class section */
+/*--------------------------
+Header and Navigation Styles
+--------------------------*/
 
 .wrap {
-
   width: 100%;
   margin: 0 auto;
-
 }
 
 .name {
-
-  padding: 5px 0;
-
+  padding: 30px 0 15px;
+  margin-top: 0;
 }
 
 .nav-header {
-
   margin: 0 auto;
   text-align: center;
-
+  background-color: #F8F8F8;
 }
 
 .nav-header a {
-
   display: block;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   margin: 10px 15px;
   padding: 15px 5px;
-
-}
-
-.nav-header a {
-
   color: black;
   font-weight: bold;
   font-size: 1.5em;
-
 }
 
 .profile-image {
-
   margin: 40px 0;
   max-width: 70%;
-
 }
 
 .images {
-
   margin: 20px 0;
   max-width: 80%;
-
 }
 
+.profile-description,
 .description {
-
   text-align: center;
   margin: -10px 15px 0;
   padding: 15px 0 30px;
   font-size: 16px;
   color: gray;
-
 }
 
-.container {
+/*-------------
+ Content Styles
+ ------------*/
 
+.container {
   background-color: #FFF;
   text-align: center;
   width: 100%;
-
 }
 
-
-.section-title {
-
+.container_title {
   padding-top: 60px;
   padding-bottom: 20px;
   font-size: 20px;
-
 }
 
 .project-name {
-
   font-size: 22px;
   margin-top: 5px;
   padding: 5px 0;
-
 }
 
-.footer {
+/*-----------
+Footer styles
+------------*/
 
+.footer {
   margin: 0 auto;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-
+  background-color: #F8F8F8;
 }
 
-.footer a {
-
-  color: gray;
-
-}
-
-.footer-contact {
-
+.footer_contact {
   font-size: 22px;
+}
 
+.footer_navigation-bar {
+  display: none;
 }
 
 .contact-info {
-
   margin: 20px 0;
-
 }
 
 .contact-info:last-child {
-
   padding-bottom: 70px;
-
 }
 
 .end-infos {
-
  border-top: 1px solid gray;
  width: 90%;
+ height: 52px;
  margin: 0 auto;
  margin-top: 80px;
-
 }
 
 .footer-name {
-
   padding: 15px 0;
   float: left;
   font-size: 16px;
-
 }
 
 .footer-back {
-
   padding: 15px 0;
   float: right;
   font-size: 16px;
   color: black;
-
 }
 
-.footer-back a:visited {
+.footer-back a:visited,
+.footer-back a:link,
+.footer a {
   color: black;
 }
 
-/* Id section */
+
+/*-------------------------
+Media query for tablet view
+-------------------------*/
+
+@media (min-width: 768px) {
+
+/*------------------------------------------
+Header and Navigation styles for tablet view
+------------------------------------------*/
+  .nav-header {
+    height: 50%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar li {
+    list-style: none;
+  }
+
+  .navbar a {
+    background-color: #F8F8F8;
+  }
+
+  .name {
+    padding-top: 30px;
+    margin-bottom: -5px;
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    margin-bottom: 60px;
+    max-width: 100%;
+  }
+
+  .profile-description {
+    margin-top: 25px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+/*------------------------------
+  Content styles for tablet view
+------------------------------*/
 
 
 
+/*--------------
+Container styles
+--------------*/
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .container_title {
+    margin: 0 auto;
+    padding: 70px 0;
+    text-align: center;
+  }
+
+  .images {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+ .description {
+   margin: 0 auto;
+   padding: 10px 0 40px;
+   width: 80%;
+   height: 130px;
+ }
 
 
+ /*--------------------
+ 2 column layout styles
+ --------------------*/
 
-/* Media query section */
+   .container_card {
+     width: 45%;
+     margin-left: 2.5%;
+     margin-right: 2.5%;
+     display: inline-block;
+     float: left;
+   }
+
+/*----------------------------
+ Footer styles for tablet view
+ ---------------------------*/
+
+  .footer {
+    min-height: calc(100vh - 200px);
+    background-color: #F8F8F8;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .footer_contact {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 10px auto;
+  }
+
+   .footer--description {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .footer-back {
+    display: none;
+  }
+
+  .footer_navigation-bar {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    justify-content: flex-end;
+  }
+
+  .footer_navigation-bar li {
+    margin-left: 30px;
+    font-weight: bold;
+  }
+
+
+  .footer_navigation-bar li a:link,
+  .footer_navigation-bar li a:visited {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+/*-----------------------------------------
+Clearfix for collapsing margins tablet view
+-----------------------------------------*/
+
+  .clearfix::before,
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+}
+
+/*-----------------
+Desktop view styles
+-----------------*/
+
+@media (min-width: 1024px) {
+
+  .name {
+    display: inline-block;
+    float: left;
+    padding-bottom: 5px;
+    padding-top: 21px;
+
+  }
+
+  .navbar {
+    display: inline-block;
+    float: right;
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navigation {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+  }
+
+  .profile-description {
+    margin-left: 0;
+  }
+
+  .nav-header li a:last-child {
+    margin-right: 0;
+  }
+
+
+  /*--------------------
+  3 column layout styles
+  --------------------*/
+  .container {
+    padding: 0 30px;
+  }
+
+  .container_title {
+    padding: 80px 0;
+  }
+
+  .container_card {
+    width: 31.3%;
+    margin: 0 1%;
+  }
+
+  .profile-description {
+    text-align: left;
+    width: 60%;
+  }
+
+  .profile-container img {
+    width: 40%;
+  }
+
+  .footer {
+    min-height: 100px;
+  }
+
+  .footer_contact {
+    padding-bottom: 25px;
+  }
+
+
+}
