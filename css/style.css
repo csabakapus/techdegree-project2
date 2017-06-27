@@ -133,6 +133,7 @@ Footer styles
 .end-infos {
  border-top: 1px solid gray;
  width: 90%;
+ height: 52px;
  margin: 0 auto;
  margin-top: 80px;
 }
