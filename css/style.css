@@ -110,7 +110,7 @@ Footer styles
   background-color: #F8F8F8;
 }
 
-.footer-contact {
+.footer_contact {
   font-size: 22px;
 }
 
@@ -371,6 +371,13 @@ Desktop view styles
     width: 40%;
   }
 
+  .footer {
+    min-height: 100px;
+  }
+
+  .footer_contact {
+    padding-bottom: 25px;
+  }
 
 
 }
