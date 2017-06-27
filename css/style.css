@@ -60,7 +60,8 @@ Header and Navigation Styles
   max-width: 80%;
 }
 
-.profile-description {
+.profile-description,
+.description {
   text-align: center;
   margin: -10px 15px 0;
   padding: 15px 0 30px;
@@ -76,14 +77,6 @@ Header and Navigation Styles
   background-color: #FFF;
   text-align: center;
   width: 100%;
-}
-
-.description {
-  text-align: center;
-  margin: -10px 15px 0;
-  padding: 15px 0 30px;
-  font-size: 16px;
-  color: gray;
 }
 
 .container_title {
@@ -319,6 +312,8 @@ Desktop view styles
   .name {
     display: inline-block;
     float: left;
+    padding-bottom: 5px;
+    padding-top: 21px;
 
   }
 
