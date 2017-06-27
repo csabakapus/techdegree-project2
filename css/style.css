@@ -110,10 +110,6 @@ Footer styles
   background-color: #F8F8F8;
 }
 
-.footer a {
-  color: gray;
-}
-
 .footer-contact {
   font-size: 22px;
 }
@@ -152,7 +148,8 @@ Footer styles
 }
 
 .footer-back a:visited,
-.footer-back a:link {
+.footer-back a:link,
+.footer a {
   color: black;
 }
 
@@ -319,12 +316,60 @@ Desktop view styles
 
 @media (min-width: 1024px) {
 
-  .nav-header {
+  .name {
+    display: inline-block;
+    float: left;
 
   }
 
+  .navbar {
+    display: inline-block;
+    float: right;
+  }
+
+  .navbar li {
+    float: left;
+  }
+
+  .navigation {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 20px;
+  }
+
+  .profile-description {
+    margin-left: 0;
+  }
+
+  .nav-header li a:last-child {
+    margin-right: 0;
+  }
 
 
+  /*--------------------
+  3 column layout styles
+  --------------------*/
+  .container {
+    padding: 0 30px;
+  }
+
+  .container_title {
+    padding: 80px 0;
+  }
+
+  .container_card {
+    width: 31.3%;
+    margin: 0 1%;
+  }
+
+  .profile-description {
+    text-align: left;
+    width: 60%;
+  }
+
+  .profile-container img {
+    width: 40%;
+  }
 
 
 
