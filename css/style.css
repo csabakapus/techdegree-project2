@@ -151,7 +151,8 @@ Footer styles
   color: black;
 }
 
-.footer-back a:visited {
+.footer-back a:visited,
+.footer-back a:link {
   color: black;
 }
 
