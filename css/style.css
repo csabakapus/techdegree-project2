@@ -1,3 +1,10 @@
+/*-----------------
+Import google fonts
+-----------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Fresca');
+
+
 /*------------------
  Base Element Styles
  -----------------*/
@@ -84,14 +91,19 @@ Header and Navigation Styles
   width: 100%;
 }
 
-.container_title {
+.images:hover {
+  box-shadow: 0px 5px 2px #69C673;
+}
+
+.section_title {
   padding-top: 60px;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 .project-name {
-  font-size: 22px;
+  font-family: 'Fresca', sans-serif;
+  font-size: 1.5em;
   margin-top: 5px;
   padding: 5px 0;
 }
@@ -109,7 +121,7 @@ Footer styles
 }
 
 .footer_contact {
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 .footer_navigation-bar {
@@ -145,10 +157,13 @@ Footer styles
   color: black;
 }
 
-.footer-back a:visited,
-.footer-back a:link,
+.footer a:visited,
 .footer a {
   color: black;
+}
+
+.footer a:hover {
+  color: #69C673;
 }
 
 
@@ -224,7 +239,7 @@ Container styles
     margin: 0 auto;
   }
 
-  .container_title {
+  .section_title {
     margin: 0 auto;
     padding: 70px 0;
     text-align: center;
@@ -360,7 +375,7 @@ Desktop view styles
     padding: 0 30px;
   }
 
-  .container_title {
+  .section_title {
     padding: 80px 0;
   }
 
