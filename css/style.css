@@ -32,7 +32,7 @@ Header and Navigation Styles
 --------------------------*/
 
 .wrap {
-  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
